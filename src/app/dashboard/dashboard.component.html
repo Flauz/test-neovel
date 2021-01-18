@@ -1,0 +1,7 @@
+<p>dashboard works!</p>
+
+<ul>
+    <a *ngFor="let book of books" routerLink="/book/{{book.id}}">
+        <li >{{ book.name}}</li>
+    </a>
+</ul>
