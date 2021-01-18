@@ -9,7 +9,7 @@ const routes: Routes = [
     path: "dashboard", component: DashboardComponent
   },
   { path: "book/:id", component: BookComponent },
-  { path: "chapter-book", component: ChapterBookComponent}
+  { path: "chapters/:id", component: ChapterBookComponent}
 ];
 
 @NgModule({
