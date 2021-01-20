@@ -1,6 +1,6 @@
 <h4>List of books</h4>
 
-<div class="container">
+<div class="container" *ngIf="books">
     <div class="row">
         <div *ngFor="let book of books" class="col-sm-4">
             <div class="card" style="width: 100%; margin: 10px;">

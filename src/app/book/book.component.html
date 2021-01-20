@@ -1,6 +1,13 @@
 <p>book works!</p>
 
-<h2>{{book.name}}</h2>
-<p>{{book.id}}</p>
-<p>{{book.bookDescription}}</p>
-<a routerLink="/chapters/{{book.id}}">liste des chapitres</a>
+<div *ngIf="book">
+    <div class="card">
+        <h5 class="card-header">{{ book.name }} by {{book.authors}}</h5>
+        <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="card-text">{{book.bookDescription}}</p>
+            <a routerLink="/chapters/{{book.id}}" class="btn btn-primary">Chapters list</a>
+        </div>
+    </div>
+</div>
+

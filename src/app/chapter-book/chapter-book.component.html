@@ -1,6 +1,6 @@
 <p>chapter-book works!</p>
 
-<ul>
+<ul *ngIf="chapters">
     <li *ngFor="let chapter of chapters">
         <p>{{chapter.chapterName}}</p>
     </li>
